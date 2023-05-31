@@ -1,11 +1,12 @@
 const form = document.getElementById ('form-campos');
 
 
-form.addEventListener("submit", function (e) {
-  let numA = Number(document.getElementById("campoa"));
-  let numB = Number (document.getElementById("campob"));
+form.preventDefault("submit", function (e) {
+  let numA = campoa (document.getElementById("campoa"));
+  let numB = campob (document.getElementById("campob"));
 
 
+  
 e.preventDefault();
 	  numA.value = "";
 	  numB.value = "";
