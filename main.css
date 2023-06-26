@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto,sans-serif;
+}
+h1 {
+    padding-top: 150px;
+    text-align: center;
+}
+ form {
+    padding: 24px 0;
+    text-align: center;
+    display: block;
+} 
+
+form h2 {
+    margin-bottom: 16px;
+
+}
+input, button {
+    padding: 8px;
+} 
+button {
+    background-color: #35e36f;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+}
+ol {
+    padding-top: 20px;
+}
+li:hover {
+    cursor: pointer;
+}
+.concluido{
+    text-decoration: line-through;
+}
