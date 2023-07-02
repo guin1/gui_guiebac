@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <section id="contato">
+        <div class="container">
+            <h2>Insira seus dados</h2>
+            <form>
+                 <div class="form-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Nome completo" name="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="E-mail" name="email">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" placeholder="Telefone" name="telefone">
+                </div>
+                <div class="form-campo">
+                    <label for="cpf">CPF:</label>
+                    <input type="cpf" id="cpf" placeholder="Digite seu CPF" name="insiraOCpf">
+                </div>
+                <div class="form-campo">
+                    <label for="cep">Cep:</label>
+                    <input type="cep" id="cep" placeholder="Digite seu Cep" name="insiraOCep">
+                </div>
+                <div class="form-campo">
+                    <label for="endereco">Endereço:</label>
+                    <input type="end" id="endereco" placeholder="Enderço completo" name="endereco">
+                </div>
+                <button type="submit" id="enviar">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery.mask.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
