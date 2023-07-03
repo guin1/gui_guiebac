@@ -1,18 +1,23 @@
-$(document).ready(function() {
-    $('form').on('submit' , function (e){
- e.preventDefault();
- const tarefa = $('input').val()
- const listaDevres = $('lista-deveres')
- $(`<li>${tarefa}</li>`).appendTo('ol');
-$(item).appendTo()
-    })
-    $('button').click(function() {
-    })
-
-    $('form ol li').click(function() {
-        console.log('tudo ok')
-        $(this).addClass('concluido');
+$(document).ready(function (){
+    $('form').on('submit', function(event) {
+        event.preventDefault();
         
-    });
+        const novaTarefa = $('#lista-devres').val();
+        const novoItem = $('<li></li>');
+
+
+        $(`${novaTarefa}`).appendTo(novoItem);
+        
+        $(`<li>${novaTarefa}</li>`).appendTo(novoItem);
+        
+        $(novoItem).appendTo('ol');
+        $('li').click(function() {
+            $('li').css({"text-decoration":"line-through"});
+            $(this).addClass('.concluido');
+        }); 
+
+
+        $('#lista-devres').val('');
+    })
 })
 
